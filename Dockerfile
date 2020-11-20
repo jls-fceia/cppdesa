@@ -1,12 +1,8 @@
-FROM registry.fedoraproject.org/fedora
+FROM registry.centos.org/centos
 
-RUN dnf -y install gcc && \
-    dnf -y install g++ &&\
-    dnf -y install boost && \
-    dnf -y install git && \
-    dnf -y install make && \
-    dnf -y install cmake 
+RUN yum -y install gcc && \
+    yum -y install boost && \
+    yum -y install make
 
-
-CMD tail -f /dev/null
+CMD echo "Finale grandioso"
 
