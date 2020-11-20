@@ -5,8 +5,7 @@ RUN dnf -y install gcc && \
     dnf -y install boost && \
     dnf -y install git && \
     dnf -y install make && \
-    dnf -y install cmake && \
-    dnf -y install vim
+    dnf -y install cmake 
 
 
 CMD tail -f /dev/null
